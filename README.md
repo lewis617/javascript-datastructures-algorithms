@@ -1,6 +1,6 @@
 # Javascript Solutions
 
-常用算法的 JavaScript 实现，同时包含了相应的单元测试。
+常用算法的 JavaScript 实现，还包含了相应的单元测试。
 
 ## 安装依赖
 

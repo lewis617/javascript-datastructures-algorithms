@@ -1,11 +1,11 @@
 {
-  "dependencies": {
-    "jest": "^18.1.0"
-  },
   "name": "javascript-solutions",
   "description": "常用算法的 JavaScript 实现",
   "version": "1.0.0",
   "main": "index.js",
+  "dependencies": {
+    "jest": "^18.1.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "jest",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/lewis617/javascript-solutions.git"
   },
-  "author": "",
+  "author": "lewis617",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lewis617/javascript-solutions/issues"
