@@ -27,5 +27,6 @@ npm test -- --watch
 ### [求斐波那契数列](https://github.com/lewis617/javascript-solutions/blob/master/src/fibonacci.js)
 ### [创建栈](https://github.com/lewis617/javascript-solutions/blob/master/src/Stack.js)
 ### [十进制转二进制](https://github.com/lewis617/javascript-solutions/blob/master/src/divideBy2.js)
+### [创建队列](https://github.com/lewis617/javascript-solutions/blob/master/src/Queue.js)
 
 *未完待续*

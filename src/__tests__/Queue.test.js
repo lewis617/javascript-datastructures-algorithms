@@ -6,6 +6,7 @@ test('Queue', function () {
   queue.enqueue('John');
   queue.enqueue('Jack');
   queue.enqueue('Susan');
+  expect(queue.front()).toBe('John');
   expect(queue.getItems()).toBe('John,Jack,Susan');
   expect(queue.size()).toBe(3);
   expect(queue.isEmpty()).toBeFalsy();
