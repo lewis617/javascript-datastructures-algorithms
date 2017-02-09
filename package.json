@@ -2,14 +2,11 @@
   "name": "javascript-solutions",
   "description": "常见算法的 JavaScript 实现",
   "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^18.1.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest"
   },
   "repository": {
     "type": "git",

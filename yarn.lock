@@ -940,6 +940,12 @@ istanbul-reports@^1.0.0:
   dependencies:
     handlebars "^4.0.3"
 
+jest:
+  version "18.1.0"
+  resolved "http://registry.npm.taobao.org/jest/download/jest-18.1.0.tgz#bcebf1e203dee5c2ad2091c805300a343d9e6c7d"
+  dependencies:
+    jest-cli "^18.1.0"
+
 jest-changed-files@^17.0.2:
   version "17.0.2"
   resolved "http://registry.npm.taobao.org/jest-changed-files/download/jest-changed-files-17.0.2.tgz#f5657758736996f590a51b87e5c9369d904ba7b7"
@@ -1115,12 +1121,6 @@ jest-util@^18.1.0:
     jest-file-exists "^17.0.0"
     jest-mock "^18.0.0"
     mkdirp "^0.5.1"
-
-jest@^18.1.0:
-  version "18.1.0"
-  resolved "http://registry.npm.taobao.org/jest/download/jest-18.1.0.tgz#bcebf1e203dee5c2ad2091c805300a343d9e6c7d"
-  dependencies:
-    jest-cli "^18.1.0"
 
 jodid25519@^1.0.0:
   version "1.0.2"
