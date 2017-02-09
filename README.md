@@ -19,7 +19,7 @@ yarn
 ```bash
 npm test
 
-npm run test:watch
+npm test -- --watch
 ```
 
 ## 目录

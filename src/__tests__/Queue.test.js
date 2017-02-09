@@ -6,10 +6,10 @@ test('Queue', function () {
   queue.enqueue('John');
   queue.enqueue('Jack');
   queue.enqueue('Susan');
-  queue.print();
+  expect(queue.getItems()).toBe('John,Jack,Susan');
   expect(queue.size()).toBe(3);
   expect(queue.isEmpty()).toBeFalsy();
   queue.dequeue();
   queue.dequeue();
-  queue.print();
+  expect(queue.getItems()).toBe('Susan')
 });

@@ -13,5 +13,5 @@ test('Stack', function () {
   stack.pop();
   stack.pop();
   expect(stack.size()).toBe(2);
-  stack.print();
+  expect(stack.getItems()).toBe('5,8')
 });
