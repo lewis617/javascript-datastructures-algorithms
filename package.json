@@ -1,6 +1,6 @@
 {
   "name": "javascript-solutions",
-  "description": "常用算法的 JavaScript 实现",
+  "description": "常见算法的 JavaScript 实现",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {

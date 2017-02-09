@@ -1,6 +1,6 @@
 # Javascript Solutions
 
-常用算法的 JavaScript 实现，还包含了相应的单元测试。
+常见算法的 JavaScript 实现，还包含了相应的单元测试。
 
 ## 安装依赖
 
@@ -27,3 +27,5 @@ npm run test:watch
 ### [求斐波那契数列](https://github.com/lewis617/javascript-solutions/blob/master/src/fibonacci.js)
 ### [创建栈](https://github.com/lewis617/javascript-solutions/blob/master/src/Stack.js)
 ### [十进制转二进制](https://github.com/lewis617/javascript-solutions/blob/master/src/divideBy2.js)
+
+*未完待续*
