@@ -7,10 +7,10 @@ test('Queue', function () {
   queue.enqueue('Jack');
   queue.enqueue('Susan');
   expect(queue.front()).toBe('John');
-  expect(queue.getItems()).toBe('John,Jack,Susan');
+  expect(queue.getItems()).toEqual(["John", "Jack", "Susan"]);
   expect(queue.size()).toBe(3);
   expect(queue.isEmpty()).toBeFalsy();
   queue.dequeue();
   queue.dequeue();
-  expect(queue.getItems()).toBe('Susan')
+  expect(queue.getItems()).toEqual(['Susan'])
 });

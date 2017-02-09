@@ -16,7 +16,7 @@ function Queue() {
     return items.length;
   };
   this.getItems = function () {
-    return items.toString();
+    return items;
   };
 }
 

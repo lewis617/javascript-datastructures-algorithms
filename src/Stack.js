@@ -19,7 +19,7 @@ function Stack() {
     return items.length;
   };
   this.getItems = function () {
-    return items.toString();
+    return items;
   };
 }
 
