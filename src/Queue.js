@@ -15,8 +15,8 @@ function Queue() {
   this.size = function () {
     return items.length;
   };
-  this.getItems = function () {
-    return items;
+  this.print = function () {
+    console.log(items.toString());
   };
 }
 

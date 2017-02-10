@@ -38,8 +38,15 @@ function PriorityQueue() {
   this.size = function () {
     return items.length;
   };
-  this.getItems = function () {
-    return items;
+  this.print = function () {
+    var string = '';
+    for (var i = 0; i < items.length; i++) {
+      string += items[i].element +
+        '-' +
+        items[i].priority +
+        (items.length - i > 1 ? ',' : '');
+    }
+    console.log(string);
   };
 }
 

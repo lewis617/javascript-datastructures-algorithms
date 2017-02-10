@@ -7,7 +7,7 @@ function Stack() {
     return items.pop();
   };
   this.peek = function () {
-    return items[items.length -1];
+    return items[items.length - 1];
   };
   this.isEmpty = function () {
     return items.length == 0;
@@ -18,8 +18,8 @@ function Stack() {
   this.size = function () {
     return items.length;
   };
-  this.getItems = function () {
-    return items;
+  this.print = function () {
+    console.log(items.toString());
   };
 }
 
