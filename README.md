@@ -1,4 +1,5 @@
 # Javascript Solutions
+[![Build Status](https://travis-ci.org/lewis617/javascript-solutions.svg?branch=master)](https://travis-ci.org/lewis617/javascript-solutions)
 
 常见算法的 JavaScript 实现，还包含了相应的单元测试。
 
