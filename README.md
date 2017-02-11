@@ -30,5 +30,6 @@ npm test -- --watch
 ### [创建队列](https://github.com/lewis617/javascript-solutions/blob/master/src/Queue.js)
 ### [优先队列](https://github.com/lewis617/javascript-solutions/blob/master/src/PriorityQueue.js)
 ### [创建链表](https://github.com/lewis617/javascript-solutions/blob/master/src/LinkedList.js)
+### [双向链表](https://github.com/lewis617/javascript-solutions/blob/master/src/DoublyLinkedList.js)
 
 *未完待续*
