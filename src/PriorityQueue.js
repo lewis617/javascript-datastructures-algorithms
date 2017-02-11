@@ -1,10 +1,10 @@
 function PriorityQueue() {
   var items = [];
 
-  function QueueElement(element, priority) {
+  var QueueElement = function (element, priority) {
     this.element = element;
     this.priority = priority;
-  }
+  };
 
   this.enqueue = function (element, priority) {
     var queueElement = new QueueElement(element, priority);
