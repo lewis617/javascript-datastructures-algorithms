@@ -34,5 +34,6 @@ npm test -- --watch
 ### [双向链表](https://github.com/lewis617/javascript-solutions/blob/master/src/DoublyLinkedList.js)
 ### [集合](https://github.com/lewis617/javascript-solutions/blob/master/src/Set.js)
 ### [字典](https://github.com/lewis617/javascript-solutions/blob/master/src/Dictionary.js)
+### [散列表](https://github.com/lewis617/javascript-solutions/blob/master/src/HashTable.js)
 
 *未完待续*
