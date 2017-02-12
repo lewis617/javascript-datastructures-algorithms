@@ -36,5 +36,6 @@ npm test -- --watch
 ### [字典](https://github.com/lewis617/javascript-solutions/blob/master/src/Dictionary.js)
 ### [散列表](https://github.com/lewis617/javascript-solutions/blob/master/src/HashTable.js)
 ### [解决散列表冲突：分离链接](https://github.com/lewis617/javascript-solutions/blob/master/src/HashCollisionSeparateChaining.js)
+### [解决散列表冲突：线性探查](https://github.com/lewis617/javascript-solutions/blob/master/src/HashCollisionLinearProbing.js)
 
 *未完待续*
