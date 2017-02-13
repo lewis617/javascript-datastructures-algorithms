@@ -12,19 +12,16 @@ function HashCollisionLinearProbing() {
   var ValuePair = function (key, value) {
     this.key = key;
     this.value = value;
-    this.toString = function () {
-      console.log(this.key + '-' + this.value);
-    }
   };
 
   this.put = function (key, value) {
     var position = loseloseHashCode(key);
 
-    if (table[position] == undefined) {
+    if (table[position] === undefined) {
       table[position] = new ValuePair(key, value);
     } else {
       var index = ++position;
-      while (table[index] == undefined) {
+      while (table[index] !== undefined) {
         index++;
       }
       table[index] = new ValuePair(key, value);
@@ -34,15 +31,18 @@ function HashCollisionLinearProbing() {
   this.get = function (key) {
     var position = loseloseHashCode(key);
 
-    if(table[position] !== undefined){
-      if(table[position].key ===key){
+    if (table[position] !== undefined) {
+      if (table[position].key === key) {
         return table[position].value;
+      } else {
+        var index = ++position;
+        while (table[index] !== undefined && (table[index] && table[index].key !== key)) {
+          index++;
+        }
+        if (table[index] && table[index].key === key) {
+          return table[index].value;
+        }
       }
-      var index = ++position;
-      while (table[index] == undefined || table[index].key !== key){
-        index++;
-      }
-      return table[index].value;
     }
     return undefined;
   };
@@ -50,17 +50,20 @@ function HashCollisionLinearProbing() {
   this.remove = function (key) {
     var position = loseloseHashCode(key);
 
-    if(table[position] !== undefined){
-      if(table[position].key === key){
+    if (table[position] !== undefined) {
+      if (table[position].key === key) {
         table[position] = undefined;
         return true;
+      } else {
+        var index = ++position;
+        while (table[index] === undefined || table[index].key !== key) {
+          index++;
+        }
+        if (table[index].key === key) {
+          table[index] = undefined;
+        }
+        return true;
       }
-      var index = ++position;
-      while (table[index] == undefined || table[index].key !== key){
-        index++
-      }
-      table[index] = undefined;
-      return true;
     }
     return false;
   }
