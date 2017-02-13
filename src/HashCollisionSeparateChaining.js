@@ -14,9 +14,6 @@ function HashCollisionSeparateChaining() {
   var ValuePair = function (key, value) {
     this.key = key;
     this.value = value;
-    this.toString = function () {
-      console.log(this.key + '-' + this.value);
-    }
   };
 
   this.put = function (key, value) {
