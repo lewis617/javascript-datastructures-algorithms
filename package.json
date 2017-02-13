@@ -4,12 +4,15 @@
   "version": "1.0.0",
   "devDependencies": {
     "codecov": "^1.0.1",
-    "jest": "^18.1.0",
-    "nyc": "^10.1.2"
+    "jest": "^18.1.0"
   },
   "scripts": {
     "test": "jest",
-    "test:cov": "nyc --reporter=lcov --reporter=text npm test && codecov"
+    "test:cov": "jest && codecov"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "repository": {
     "type": "git",
