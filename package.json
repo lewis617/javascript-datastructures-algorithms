@@ -1,6 +1,6 @@
 {
-  "name": "javascript-solutions",
-  "description": "常见算法的 JavaScript 实现",
+  "name": "javascript-datastructures-algorithms",
+  "description": "JavaScript 版数据结构与算法",
   "version": "1.0.0",
   "devDependencies": {
     "codecov": "^1.0.1",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lewis617/javascript-solutions.git"
+    "url": "git+https://github.com/lewis617/javascript-datastructures-algorithms.git"
   },
   "author": "lewis617",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lewis617/javascript-solutions/issues"
+    "url": "https://github.com/lewis617/javascript-datastructures-algorithms/issues"
   },
-  "homepage": "https://github.com/lewis617/javascript-solutions#readme"
+  "homepage": "https://github.com/lewis617/javascript-datastructures-algorithms#readme"
 }
