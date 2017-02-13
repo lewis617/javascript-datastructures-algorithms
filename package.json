@@ -3,10 +3,13 @@
   "description": "常见算法的 JavaScript 实现",
   "version": "1.0.0",
   "devDependencies": {
-    "jest": "^18.1.0"
+    "codecov": "^1.0.1",
+    "jest": "^18.1.0",
+    "nyc": "^10.1.2"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:cov": "nyc --reporter=lcov --reporter=text npm test && codecov"
   },
   "repository": {
     "type": "git",

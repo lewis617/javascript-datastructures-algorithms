@@ -2,4 +2,8 @@ language: node_js
 node_js:
   - "node"
   - "6"
-install: npm install
+install:
+  - npm install
+
+after_success:
+  - npm run test:cov
