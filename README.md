@@ -26,9 +26,7 @@ npm test -- --watch
 
 ## 目录
 
-### [斐波那契数列](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/src/fibonacci.js)
 ### [栈](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/src/Stack.js)
-### [十进制转二进制](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/src/divideBy2.js)
 ### [队列](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/src/Queue.js)
 ### [优先队列](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/src/PriorityQueue.js)
 ### [链表](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/src/LinkedList.js)
