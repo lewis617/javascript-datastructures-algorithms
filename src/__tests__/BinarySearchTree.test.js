@@ -16,6 +16,12 @@ test('BinarySearchTree', function () {
   });
   expect(keyList).toEqual([3, 5, 7, 9, 11, 13]);
 
+  var keyList = [];
+  binarySearchTree.inOrderTraverseUnRec(function (key) {
+    keyList.push(key);
+  });
+  expect(keyList).toEqual([3, 5, 7, 9, 11, 13]);
+
   keyList = [];
   binarySearchTree.preOrderTraverse(function (key) {
     keyList.push(key);
@@ -23,7 +29,19 @@ test('BinarySearchTree', function () {
   expect(keyList).toEqual([11, 7, 5, 3, 9, 13]);
 
   keyList = [];
+  binarySearchTree.preOrderTraverseUnRec(function (key) {
+    keyList.push(key);
+  });
+  expect(keyList).toEqual([11, 7, 5, 3, 9, 13]);
+
+  keyList = [];
   binarySearchTree.postOrderTraverse(function (key) {
+    keyList.push(key);
+  });
+  expect(keyList).toEqual([3, 5, 9, 7, 13, 11]);
+
+  keyList = [];
+  binarySearchTree.postOrderTraverseUnRec(function (key) {
     keyList.push(key);
   });
   expect(keyList).toEqual([3, 5, 9, 7, 13, 11]);

@@ -33,7 +33,6 @@ function Graph() {
 
     queue.enqueue(v);
 
-
     while (!queue.isEmpty()) {
       var u = queue.dequeue(),
         neighbors = adjList.get(u);

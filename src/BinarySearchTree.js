@@ -1,3 +1,5 @@
+var Stack = require('./Stack');
+
 function BinarySearchTree() {
 
   var Node = function (key) {
@@ -69,6 +71,67 @@ function BinarySearchTree() {
 
   this.postOrderTraverse = function (callback) {
     postOrderTraverseNode(root, callback);
+  };
+
+  this.preOrderTraverseUnRec = function (callback) {
+    if (root !== null) {
+      var stack = new Stack();
+      stack.push(root);
+      while (!stack.isEmpty()) {
+        var node = stack.pop();
+        if (callback) {
+          callback(node.key);
+        }
+        if (node.right) {
+          stack.push(node.right);
+        }
+        if (node.left) {
+          stack.push(node.left);
+        }
+      }
+    }
+  };
+
+  this.inOrderTraverseUnRec = function (callback) {
+    if (root !== null) {
+      var stack = new Stack(),
+        node = root;
+      while (!stack.isEmpty() || node) {
+        if (node) {
+          stack.push(node);
+          node = node.left;
+        } else {
+          node = stack.pop();
+          callback(node.key);
+          node = node.right;
+        }
+      }
+    }
+  };
+
+  this.postOrderTraverseUnRec = function (callback) {
+    if (root !== null) {
+      var stack = new Stack(),
+        outputStack = new Stack(),
+        node;
+      stack.push(root);
+      while (!stack.isEmpty()) {
+        node = stack.pop();
+        outputStack.push(node);
+        if (node.left) {
+          stack.push(node.left);
+        }
+        if (node.right) {
+          stack.push(node.right);
+        }
+      }
+      while (!outputStack.isEmpty()) {
+        node = outputStack.pop();
+        if (callback) {
+          callback(node.key);
+        }
+      }
+    }
   };
 
   var minNode = function (node) {
