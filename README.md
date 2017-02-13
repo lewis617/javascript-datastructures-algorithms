@@ -37,5 +37,6 @@ npm test -- --watch
 ### [散列表](https://github.com/lewis617/javascript-solutions/blob/master/src/HashTable.js)
 ### [解决散列表冲突：分离链接](https://github.com/lewis617/javascript-solutions/blob/master/src/HashCollisionSeparateChaining.js)
 ### [解决散列表冲突：线性探查](https://github.com/lewis617/javascript-solutions/blob/master/src/HashCollisionLinearProbing.js)
+### [树](https://github.com/lewis617/javascript-solutions/blob/master/src/BinarySearchTree.js)
 
 *未完待续*
