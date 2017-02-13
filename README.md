@@ -41,5 +41,6 @@ npm test -- --watch
 #### [解决散列表冲突：线性探查](https://github.com/lewis617/javascript-solutions/blob/master/src/HashCollisionLinearProbing.js)
 #### [树](https://github.com/lewis617/javascript-solutions/blob/master/src/BinarySearchTree.js)
 #### [图](https://github.com/lewis617/javascript-solutions/blob/master/src/Graph.js)
+#### [排序和搜索算法](https://github.com/lewis617/javascript-solutions/blob/master/src/ArrayList.js)
 
 *未完待续*
