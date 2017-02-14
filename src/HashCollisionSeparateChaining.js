@@ -47,28 +47,21 @@ function HashCollisionSeparateChaining() {
   this.remove = function (key) {
     var position = loseloseHashCode(key);
 
-    if (table[position] !== undefined) {
+    if (table[position] !== undefined){
       var current = table[position].getHead();
-      while (current.next) {
-        if (current.element.key === key) {
+
+      do {
+        if (current.element.key === key){
           table[position].remove(current.element);
-          if (table[position].isEmpty()) {
+          if (table[position].isEmpty()){
             table[position] = undefined;
           }
           return true;
         }
         current = current.next;
-      }
-      if (current.element.key === key) {
-        table[position].remove(current.element);
-        if (table[position].isEmpty()) {
-          table[position] = undefined;
-        }
-        return true;
-      }
-      return false;
-
+      } while(current);
     }
+    return false;
   }
 }
 
