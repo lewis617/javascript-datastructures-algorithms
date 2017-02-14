@@ -11,7 +11,6 @@ function HashTable() {
 
   this.put = function (key, value) {
     var position = loseloseHashCode(key);
-    console.log(position + '-' + key);
     table[position] = value;
   };
 
