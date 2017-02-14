@@ -52,7 +52,7 @@ function Set() {
   this.intersection = function (otherSet) {
     var intersectionSet = new Set();
 
-    var values = this.values();
+    var values = otherSet.values();
     for (var i = 0; i < values.length; i++) {
       if (this.has(values[i])) {
         intersectionSet.add(values[i]);
@@ -70,7 +70,6 @@ function Set() {
         differenceSet.add(values[i]);
       }
     }
-
     return differenceSet;
   };
 
