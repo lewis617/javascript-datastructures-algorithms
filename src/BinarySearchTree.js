@@ -180,13 +180,10 @@ function BinarySearchTree() {
   };
 
   var findMinNode = function (node) {
-    if (node) {
-      while (node && node.left) {
-        node = node.left;
-      }
-      return node;
+    while (node && node.left) {
+      node = node.left;
     }
-    return null;
+    return node;
   };
 
   var removeNode = function (node, key) {
@@ -194,11 +191,16 @@ function BinarySearchTree() {
       return null;
     }
     if (key < node.key) {
-      return removeNode(node.left);
+      node.left = removeNode(node.left, key);
+      return node;
     } else if (key > node.key) {
-      return removeNode(node.right);
+      node.right = removeNode(node.right, key);
+      return node;
     } else {
       if (node.left === null && node.right === null) {
+        if(node ===root){
+          root = null;
+        }
         node = null;
         return node;
       } else if (node.left === null) {
@@ -218,6 +220,14 @@ function BinarySearchTree() {
 
   this.remove = function (key) {
     return removeNode(root, key);
+  };
+
+  this.values = function (traverseFuc) {
+    var keyList = [];
+    this[traverseFuc](function (key) {
+      keyList.push(key);
+    });
+    return keyList;
   }
 }
 
