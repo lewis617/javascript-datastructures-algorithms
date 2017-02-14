@@ -1,4 +1,4 @@
-var HashCollisionLinearProbing = require('../HashCollisionLinearProbing');
+var HashCollisionLinearProbing = require('./HashCollisionLinearProbing');
 
 test('HashCollisionLinearProbing', function () {
   var hashCollisionLinearProbing = new HashCollisionLinearProbing();

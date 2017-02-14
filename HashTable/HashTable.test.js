@@ -1,4 +1,4 @@
-var HashTable = require('../HashTable');
+var HashTable = require('./HashTable');
 
 test('HashTable',function () {
   var hashTable = new HashTable();

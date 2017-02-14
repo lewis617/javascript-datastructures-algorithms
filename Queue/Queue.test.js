@@ -1,4 +1,4 @@
-var Queue = require('../Queue');
+var Queue = require('./Queue');
 
 test('Queue', function () {
   var queue = new Queue();

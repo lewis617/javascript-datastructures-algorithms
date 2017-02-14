@@ -1,4 +1,4 @@
-var LinkedList = require('../LinkedList');
+var LinkedList = require('./LinkedList');
 
 test('LinkedList', function () {
   var linkedList = new LinkedList();

@@ -1,4 +1,4 @@
-var Graph = require('../Graph');
+var Graph = require('./Graph');
 
 test('Graph', function () {
   var graph = new Graph();

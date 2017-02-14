@@ -1,4 +1,4 @@
-var Set = require('../Set');
+var Set = require('./Set');
 
 test('Set', function () {
   var set = new Set();

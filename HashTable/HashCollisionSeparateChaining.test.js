@@ -1,4 +1,4 @@
-var HashCollisionSeparateChaining = require('../HashCollisionSeparateChaining');
+var HashCollisionSeparateChaining = require('./HashCollisionSeparateChaining');
 
 test('HashCollisionSeparateChaining', function () {
   var hashCollisionSeparateChaining = new HashCollisionSeparateChaining();

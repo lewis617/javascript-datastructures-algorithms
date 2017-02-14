@@ -1,4 +1,4 @@
-var DoublyLinkedList = require('../DoublyLinkedList');
+var DoublyLinkedList = require('./DoublyLinkedList');
 
 test('DoublyLinkedList', function () {
   var doublyLinkedList = new DoublyLinkedList();

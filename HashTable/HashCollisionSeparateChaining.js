@@ -1,4 +1,4 @@
-var LinkedList = require('./LinkedList');
+var LinkedList = require('./../LinkedList/LinkedList');
 
 function HashCollisionSeparateChaining() {
   var table = [];

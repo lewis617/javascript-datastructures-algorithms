@@ -1,4 +1,4 @@
-var Stack = require('../Stack');
+var Stack = require('./Stack');
 
 test('Stack', function () {
   var stack = new Stack();

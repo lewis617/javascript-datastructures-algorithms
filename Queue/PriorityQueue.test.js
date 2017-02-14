@@ -1,4 +1,4 @@
-var PriorityQueue = require('../PriorityQueue');
+var PriorityQueue = require('./PriorityQueue');
 
 test('PriorityQueue', function () {
   var priorityQueue = new PriorityQueue();

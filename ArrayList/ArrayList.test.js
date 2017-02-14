@@ -1,4 +1,4 @@
-var ArrayList = require('../ArrayList');
+var ArrayList = require('./ArrayList');
 
 function createNonSortedArray(size) {
   var array = new ArrayList();

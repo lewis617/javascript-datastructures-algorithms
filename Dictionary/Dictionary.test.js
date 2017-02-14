@@ -1,4 +1,4 @@
-var Dictionary = require('../Dictionary');
+var Dictionary = require('./Dictionary');
 
 test('Dictionary', function () {
   var dictionary = new Dictionary();

@@ -1,4 +1,4 @@
-var Stack = require('./Stack');
+var Stack = require('./../Stack/Stack');
 
 function BinarySearchTree() {
 

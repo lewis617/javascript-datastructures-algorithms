@@ -1,4 +1,4 @@
-var BinarySearchTree = require('../BinarySearchTree');
+var BinarySearchTree = require('./BinarySearchTree');
 
 test('BinarySearchTree', function () {
   var binarySearchTree = new BinarySearchTree();

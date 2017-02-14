@@ -1,5 +1,5 @@
-var Dictionary = require('./Dictionary');
-var Queue = require('./Queue');
+var Dictionary = require('./../Dictionary/Dictionary');
+var Queue = require('./../Queue/Queue');
 
 function Graph() {
   var vertices = [];
