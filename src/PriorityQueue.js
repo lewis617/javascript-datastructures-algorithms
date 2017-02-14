@@ -38,7 +38,7 @@ function PriorityQueue() {
   this.size = function () {
     return items.length;
   };
-  this.print = function () {
+  this.toString = function () {
     var string = '';
     for (var i = 0; i < items.length; i++) {
       string += items[i].element +
@@ -46,7 +46,7 @@ function PriorityQueue() {
         items[i].priority +
         (items.length - i > 1 ? ',' : '');
     }
-    console.log(string);
+    return string;
   };
 }
 
