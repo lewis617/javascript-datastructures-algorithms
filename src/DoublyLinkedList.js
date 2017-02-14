@@ -89,16 +89,12 @@ function DoublyLinkedList() {
       string = '';
 
     while (current) {
-      string += current.element + (current.next ? ', ' : '');
+      string += current.element + (current.next ? ',' : '');
       current = current.next;
     }
     return string;
 
   };
-
-  this.print = function () {
-    console.log(this.toString());
-  }
 }
 
 module.exports = DoublyLinkedList;
