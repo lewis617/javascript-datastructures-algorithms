@@ -69,9 +69,8 @@ function LinkedList() {
       length++;
 
       return true;
-    } else {
-      return false;
     }
+    return false;
   };
 
   this.toString = function () {
@@ -80,7 +79,7 @@ function LinkedList() {
       string = '';
 
     while (current) {
-      string += current.element + (current.next ? ', ' : '');
+      string += current.element + (current.next ? ',' : '');
       current = current.next;
     }
     return string;
@@ -116,10 +115,6 @@ function LinkedList() {
 
   this.getHead = function () {
     return head;
-  };
-
-  this.print = function () {
-    console.log(this.toString());
   };
 }
 
