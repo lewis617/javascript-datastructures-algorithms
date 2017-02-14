@@ -11,7 +11,8 @@ test('Dictionary', function () {
   expect(dictionary.get('John')).toBe('johnsnow@email.com');
   expect(dictionary.values()).toEqual(['gandalf@email.com', 'johnsnow@email.com', 'tyrion@email.com']);
 
-  dictionary.remove('Gandalf');
+  expect(dictionary.remove('Gandalf')).toBeTruthy();
+  expect(dictionary.remove('Gandalf')).toBeFalsy();
   expect(dictionary.values()).toEqual(['johnsnow@email.com', 'tyrion@email.com']);
   expect(dictionary.getItems()).toEqual({
     'John': 'johnsnow@email.com',
