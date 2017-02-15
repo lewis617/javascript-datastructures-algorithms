@@ -24,6 +24,12 @@ npm test
 npm test -- --watch
 ```
 
+## 预备知识
+
+### [使用构造器函数模拟类](https://lewis617.github.io/2017/02/15/construcor-function-create-class/)
+
+### [Jest 单元测试入门](https://lewis617.github.io/2017/02/15/start-jest/)
+
 ## JavaScript 版数据结构与算法
 
 ### [JavaScript 版数据结构与算法（一）栈](https://lewis617.github.io/2017/02/15/stack/)
