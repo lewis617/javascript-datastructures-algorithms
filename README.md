@@ -27,11 +27,5 @@ npm test -- --watch
 ## 目录
 
 ### [JavaScript 版数据结构与算法（一）栈](https://lewis617.github.io/2017/02/15/stack/)
-### [队列](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/Queue)
-### [链表](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/LinkedList)
-### [集合](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/src/Set)
-### [字典](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/Dictionary)
-### [散列表](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/HashTable)
-### [树](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/Tree)
-### [图](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/Graph)
-### [排序和搜索算法](https://github.com/lewis617/javascript-datastructures-algorithms/blob/master/ArrayList)
+
+*未完待续*
