@@ -4,26 +4,6 @@
 
 JavaScript 版数据结构与算法，还包含了相应的单元测试。
 
-## 安装依赖
-
-```bash
-npm install
-```
-
-或
-
-```bash
-yarn
-```
-
-## 运行测试
-
-```bash
-npm test
-
-npm test -- --watch
-```
-
 ## 预备知识
 
 ### [使用构造器函数模拟类](https://lewis617.github.io/2017/02/15/construcor-function-create-class/)
