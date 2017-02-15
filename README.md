@@ -33,6 +33,9 @@ npm test -- --watch
 ## JavaScript 版数据结构与算法
 
 ### [JavaScript 版数据结构与算法（一）栈](https://lewis617.github.io/2017/02/15/stack/)
+### [JavaScript 版数据结构与算法（二）队列](https://lewis617.github.io/2017/02/15/queue/)
+
+> 声明：本博客教程为原创，但示例代码参考了《学习 JavaScript 数据结构与算法》一书和网络，仅供学习交流使用。
 
 *未完待续*
 
