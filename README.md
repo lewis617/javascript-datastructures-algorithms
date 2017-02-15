@@ -32,6 +32,6 @@ npm test -- --watch
 
 ## 其他教程
 
-[React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
+### [React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
 
-[Angular2教程](https://github.com/lewis617/angular2-tutorial)
+### [Angular2教程](https://github.com/lewis617/angular2-tutorial)
