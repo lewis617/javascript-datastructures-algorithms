@@ -30,7 +30,7 @@ npm test -- --watch
 
 ### [Jest 单元测试入门](https://lewis617.github.io/2017/02/15/start-jest/)
 
-## JavaScript 版数据结构与算法
+## 目录
 
 ### [JavaScript 版数据结构与算法（一）栈](https://lewis617.github.io/2017/02/15/stack/)
 ### [JavaScript 版数据结构与算法（二）队列](https://lewis617.github.io/2017/02/15/queue/)
