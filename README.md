@@ -24,8 +24,14 @@ npm test
 npm test -- --watch
 ```
 
-## 目录
+## JavaScript 版数据结构与算法
 
 ### [JavaScript 版数据结构与算法（一）栈](https://lewis617.github.io/2017/02/15/stack/)
 
 *未完待续*
+
+## 其他教程
+
+[React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
+
+[Angular2教程](https://github.com/lewis617/angular2-tutorial)
