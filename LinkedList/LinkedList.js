@@ -27,8 +27,8 @@ function LinkedList() {
   };
 
   this.removeAt = function (position) {
-    // 用于跳过三种异常情况
-    if (head !== null && position > -1 && position < length) {
+    // 用于跳过异常情况
+    if (position > -1 && position < length) {
       var current = head,
         previous,
         index = 0;

@@ -2,7 +2,6 @@ var LinkedList = require('./LinkedList');
 
 test('LinkedList', function () {
   var linkedList = new LinkedList();
-  expect(linkedList.removeAt(1)).toBe(null);
   linkedList.append(15);
   linkedList.append(10);
   expect(linkedList.toString()).toBe('15,10');
