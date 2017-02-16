@@ -4,19 +4,17 @@ test('Set', function () {
   var set = new Set();
 
   expect(set.add(1)).toBeTruthy();
-  expect(set.has(1)).toBeTruthy();
   expect(set.add(1)).toBeFalsy();
-  expect(set.size()).toBe(1);
-  expect(set.values()).toEqual(['1']);
-
   expect(set.add(2)).toBeTruthy();
-  expect(set.has(2)).toBeTruthy();
-  expect(set.size()).toBe(2);
-  expect(set.values()).toEqual(['1', '2']);
+
+  expect(set.has(1)).toBeTruthy();
+  expect(set.has(3)).toBeFalsy();
 
   expect(set.remove(1)).toBeTruthy();
-  expect(set.values()).toEqual(['2']);
   expect(set.remove(1)).toBeFalsy();
+
+  expect(set.size()).toBe(1);
+  expect(set.values()).toEqual(['2']);
 
   var otherSet = new Set();
   otherSet.add(3);
