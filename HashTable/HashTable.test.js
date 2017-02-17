@@ -3,10 +3,13 @@ var HashTable = require('./HashTable');
 test('HashTable',function () {
   var hashTable = new HashTable();
 
-  hashTable.put('Gandalf', 'gandalf@email.com');
-  hashTable.put('John', 'johnsnow@email.com');
-  hashTable.put('Tyrion', 'tyrion@email.com');
+  hashTable.put('zhangsan', 'zhangsan@email.com');
+  hashTable.put('lisi', 'lisi@email.com');
 
-  expect(hashTable.get('Gandalf')).toBe('gandalf@email.com');
-  expect(hashTable.get('Loiane')).toBe(undefined);
+  expect(hashTable.get('zhangsan')).toBe('zhangsan@email.com');
+  expect(hashTable.get('lisi')).toBe('lisi@email.com');
+
+  hashTable.remove('zhangsan');
+  expect(hashTable.get('zhangsan')).toBe(undefined);
+
 });

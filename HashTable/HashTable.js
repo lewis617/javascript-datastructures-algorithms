@@ -17,6 +17,10 @@ function HashTable() {
   this.get = function (key) {
     return table[loseloseHashCode(key)];
   };
+
+  this.remove = function (key) {
+    table[loseloseHashCode(key)] = undefined;
+  };
 }
 
 module.exports = HashTable;

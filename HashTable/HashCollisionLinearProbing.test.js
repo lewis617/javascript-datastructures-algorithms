@@ -1,22 +1,20 @@
-var HashCollisionLinearProbing = require('./HashCollisionLinearProbing');
+var HashTable = require('./HashCollisionLinearProbing');
 
 test('HashCollisionLinearProbing', function () {
-  var hashCollisionLinearProbing = new HashCollisionLinearProbing();
-  hashCollisionLinearProbing.put('Gandalf', 'gandalf@email.com');
-  hashCollisionLinearProbing.put('Gandalf12', 'gandalf12@email.com');
-  hashCollisionLinearProbing.put('Gandalf21', 'gandalf21@email.com');
-  hashCollisionLinearProbing.put('Gandalf30', 'gandalf30@email.com');
-  expect(hashCollisionLinearProbing.get('Gandalf')).toBe('gandalf@email.com');
-  expect(hashCollisionLinearProbing.get('Gandalf12')).toBe('gandalf12@email.com');
-  expect(hashCollisionLinearProbing.get('Gandalf21')).toBe('gandalf21@email.com');
-  expect(hashCollisionLinearProbing.get('Gandalf30')).toBe('gandalf30@email.com');
-  expect(hashCollisionLinearProbing.remove('Gandalf')).toBeTruthy();
-  expect(hashCollisionLinearProbing.get('Gandalf')).toBe(undefined);
-  expect(hashCollisionLinearProbing.remove('Gandalf30')).toBeTruthy();
-  expect(hashCollisionLinearProbing.get('Gandalf30')).toBe(undefined);
-  expect(hashCollisionLinearProbing.remove('Gandalf21')).toBeTruthy();
-  expect(hashCollisionLinearProbing.get('Gandalf21')).toBe(undefined);
-  expect(hashCollisionLinearProbing.remove('Gandalf12')).toBeTruthy();
-  expect(hashCollisionLinearProbing.get('Gandalf12')).toBe(undefined);
-  expect(hashCollisionLinearProbing.remove('Gandalf20')).toBeFalsy();
+  var hashTable = new HashTable();
+
+  hashTable.put('zhangsan', 'zhangsan@email.com'); // 代码一
+  hashTable.put('zhangsan12', 'zhangsan12@email.com'); // 代码二
+  hashTable.put('zhangsan21', 'zhangsan21@email.com'); // 代码三
+  hashTable.put('zhangsan30', 'zhangsan30@email.com'); // 代码四
+  expect(hashTable.get('zhangsan')).toBe('zhangsan@email.com'); // 断言一
+  expect(hashTable.get('zhangsan12')).toBe('zhangsan12@email.com'); // 断言二
+  expect(hashTable.get('zhangsan21')).toBe('zhangsan21@email.com'); // 断言三
+  expect(hashTable.get('zhangsan30')).toBe('zhangsan30@email.com'); // 断言四
+  expect(hashTable.remove('zhangsan')).toBeTruthy(); // 断言五
+  expect(hashTable.get('zhangsan')).toBe(undefined); // 断言六
+  expect(hashTable.remove('zhangsan30')).toBeTruthy();  // 断言七
+  expect(hashTable.remove('zhangsan21')).toBeTruthy(); // 断言八
+  expect(hashTable.remove('zhangsan12')).toBeTruthy(); // 断言九
+  expect(hashTable.remove('zhangsan12')).toBeFalsy(); // 断言十
 });

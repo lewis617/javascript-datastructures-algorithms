@@ -22,7 +22,9 @@ JavaScript 版数据结构与算法，还包含了相应的单元测试。
 
 [JavaScript 版数据结构与算法（五）字典](https://lewis617.github.io/2017/02/17/dictionary/)
 
-> 声明：本博客教程为原创，采用了测试驱动开发的方式演示如何编写代码逻辑。其中，示例代码参考了《学习 JavaScript 数据结构与算法》一书和网络，仅供学习交流使用。
+[JavaScript 版数据结构与算法（六）散列表](https://lewis617.github.io/2017/02/17/hash-tableHashHfdsafdsfdsafdsfdsafdsa/)
+
+> 声明：本博客教程为原创，采用了测试驱动开发的方式演示如何编写代码逻辑。其中，示例代码参考了《学习 JavaScript 数据结构与算法》一书和多个网络版本，仅供学习交流使用。
 
 *未完待续*
 
