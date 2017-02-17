@@ -9,6 +9,10 @@ function Dictionary() {
     items[key] = value;
   };
 
+  this.get = function (key) {
+    return this.has(key) ? items[key] : undefined;
+  };
+
   this.remove = function (key) {
     if (this.has(key)) {
       delete items[key];
@@ -17,13 +21,9 @@ function Dictionary() {
     return false;
   };
 
-  this.get = function (key) {
-    return this.has(key) ? items[key] : undefined;
-  };
-
   this.values = function () {
     var values = [];
-    for (key in items){
+    for (var key in items){
       if(this.has(key)){
         values.push(items[key]);
       }
