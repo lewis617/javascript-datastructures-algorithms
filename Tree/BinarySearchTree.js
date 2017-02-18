@@ -228,7 +228,7 @@ function BinarySearchTree() {
       keyList.push(key);
     });
     return keyList;
-  }
+  };
 }
 
 module.exports = BinarySearchTree;
