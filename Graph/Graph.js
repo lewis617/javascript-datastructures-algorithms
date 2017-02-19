@@ -32,19 +32,20 @@ function Graph() {
       queue = new Queue();
 
     queue.enqueue(v);
+    color[v] = 'black';
 
     while (!queue.isEmpty()) {
       var u = queue.dequeue(),
         neighbors = adjList.get(u);
-      color[v] = 'gray';
+
       for (var i = 0; i < neighbors.length; i++) {
         var w = neighbors[i];
         if (color[w] === 'white') {
-          queue.enqueue(neighbors[i]);
-          color[w] = 'gray';
+          queue.enqueue(w);
+          color[w] = 'black';
         }
       }
-      color[u] = 'black';
+
       if (callback) {
         callback(u);
       }
@@ -67,12 +68,12 @@ function Graph() {
     while (!queue.isEmpty()) {
       var u = queue.dequeue(),
         neighbors = adjList.get(u);
-      color[v] = 'gray';
+      color[v] = 'black';
       for (i = 0; i < neighbors.length; i++) {
         var w = neighbors[i];
         if (color[w] === 'white') {
           queue.enqueue(w);
-          color[w] = 'gray';
+          color[w] = 'black';
 
           d[w] = d[u] + 1;
           pred[w] = u;
@@ -88,12 +89,7 @@ function Graph() {
 
   this.dfs = function (v, callback) {
     var color = initializeColor();
-    for (var i = 0; i < vertices.length; i++) {
-      if (color[vertices[i]] === 'white') {
-        dfsVisit(vertices[i], color, callback);
-      }
-
-    }
+    dfsVisit(v, color, callback);
   };
 
   var dfsVisit = function (u, color, callback) {
@@ -101,14 +97,13 @@ function Graph() {
       callback(u);
     }
     var neighbors = adjList.get(u);
-    color[u] = 'gray';
+    color[u] = 'black';
     for (var i = 0; i < neighbors.length; i++) {
       var w = neighbors[i];
       if (color[w] === 'white') {
         dfsVisit(w, color, callback);
       }
     }
-    color[u] = 'black';
   };
 
   var time = 0;
@@ -139,7 +134,7 @@ function Graph() {
   };
 
   var DFSVisit = function (u, color, d, f, p) {
-    color[u] = 'gray';
+    color[u] = 'black';
     d[u] = ++time;
     var neighbors = adjList.get(u);
     for (var i = 0; i < neighbors.length; i++) {
@@ -150,7 +145,6 @@ function Graph() {
       }
     }
     f[u] = ++time;
-    color[u] = 'black';
   };
 
 }
