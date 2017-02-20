@@ -1,46 +1,38 @@
 var ArrayList = require('./ArrayList');
 
-function createNonSortedArray(size) {
+function createNonSortedArray() {
   var array = new ArrayList();
-  for (var i = 0; i < size; i++) {
-    array.insert(size - i);
-  }
+  array.insert(1);
+  array.insert(3);
+  array.insert(5);
+  array.insert(4);
+  array.insert(2);
   return array;
 }
 
 test('ArrayList', function () {
-  var array = createNonSortedArray(5);
-  expect(array.toString()).toBe('5,4,3,2,1');
+  var array = createNonSortedArray();
+  expect(array.toString()).toBe('1,3,5,4,2');
   array.bubbleSort();
   expect(array.toString()).toBe('1,2,3,4,5');
 
-  array = createNonSortedArray(5);
-  expect(array.toString()).toBe('5,4,3,2,1');
-  array.modifiedBubbleSort();
-  expect(array.toString()).toBe('1,2,3,4,5');
-
-  array = createNonSortedArray(5);
-  expect(array.toString()).toBe('5,4,3,2,1');
+  array = createNonSortedArray();
+  expect(array.toString()).toBe('1,3,5,4,2');
   array.selectionSort();
   expect(array.toString()).toBe('1,2,3,4,5');
 
-  array = createNonSortedArray(5);
-  expect(array.toString()).toBe('5,4,3,2,1');
+  array = createNonSortedArray();
+  expect(array.toString()).toBe('1,3,5,4,2');
   array.insertionSort();
   expect(array.toString()).toBe('1,2,3,4,5');
 
-  array = new ArrayList();
-  array.insert(1);
-  array.insert(2);
-  array.insert(5);
-  array.insert(4);
-  array.insert(3);
-  expect(array.toString()).toBe('1,2,5,4,3');
+  array = createNonSortedArray();
+  expect(array.toString()).toBe('1,3,5,4,2');
   array.mergeSort();
   expect(array.toString()).toBe('1,2,3,4,5');
 
-  array = createNonSortedArray(5);
-  expect(array.toString()).toBe('5,4,3,2,1');
+  array = createNonSortedArray();
+  expect(array.toString()).toBe('1,3,5,4,2');
   array.quickSort();
   expect(array.toString()).toBe('1,2,3,4,5');
 
