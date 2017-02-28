@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/lewis617/javascript-datastructures-algorithms.svg?branch=master)](https://travis-ci.org/lewis617/javascript-datastructures-algorithms)
 [![codecov](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms)
 
-基于测试驱动开发的 JavaScript 版数据结构与算法教程。[本教程是否原创？](https://github.com/lewis617/javascript-datastructures-algorithms/issues/1)
+基于测试驱动开发的 JavaScript 版数据结构与算法教程。
 
 ## 预备知识
 
