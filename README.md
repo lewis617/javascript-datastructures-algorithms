@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/lewis617/javascript-datastructures-algorithms.svg?branch=master)](https://travis-ci.org/lewis617/javascript-datastructures-algorithms)
 [![codecov](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms)
 
-基于测试驱动开发的 JavaScript 版数据结构与算法教程。
+JavaScript 版数据结构与算法教程，还包含了相应的单元测试。
 
 ## 预备知识
 
@@ -30,7 +30,9 @@
 
 [JavaScript 版数据结构与算法（九）排序和搜索](https://lewis617.github.io/2017/02/20/sort-and-search/)
 
-> 声明：本博客教程采用了测试驱动开发的方式演示如何编写代码逻辑。其中，示例代码参考了《学习 JavaScript 数据结构与算法》一书和多个网络版本，仅供学习交流使用。
+## 续
+
+[数组搜索算法题：求和为定值的多个数](https://lewis617.github.io/2017/03/09/n-sum/)
 
 ## 其他教程
 
