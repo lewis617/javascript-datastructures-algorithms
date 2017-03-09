@@ -129,6 +129,39 @@ function ArrayList() {
     }
     return -1;
   };
+
+  var findNSum = function (nums, M, N, result, results) {
+    if (nums.length < N || M < nums[0] * N || M > nums[-1] * N) {
+      return;
+    }
+    if (N === 2) {
+      var l = 0,
+        r = nums.length - 1;
+      while (l < r) {
+        var s = nums[l] + nums[r];
+        if (s === M) {
+          results.push(result.concat([nums[l], nums[r]]));
+          l++;
+        } else if (s < M) {
+          l++;
+        } else {
+          r--;
+        }
+      }
+    } else {
+      for (var i = 0; i < nums.length - N + 1; i++) {
+        findNSum(nums.slice(i + 1), M - nums[i], N - 1, result.concat([nums[i]]), results);
+      }
+    }
+  };
+
+  this.NSum = function (N, M) {
+    this.quickSort();
+
+    var results = [];
+    findNSum(array, M, N, [], results);
+    return results;
+  };
 }
 
 module.exports = ArrayList;
