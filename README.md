@@ -2,9 +2,13 @@
 [![Build Status](https://travis-ci.org/lewis617/javascript-datastructures-algorithms.svg?branch=master)](https://travis-ci.org/lewis617/javascript-datastructures-algorithms)
 [![codecov](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms)
 
-JavaScript 版数据结构与算法教程，还包含了相应的单元测试。
+本教程相比于其他数据结构与算法教程的独特之处：
 
-## 预备知识
+- 使用 JavaScript 描述算法，适合熟悉 JavaScript 的程序员阅读。
+- 示例代码完整可运行，你可以 Clone 到本地，一边运行代码，一边阅读博文。
+- 测试用例的代码覆盖率高达 100% ，帮助你测出所有的边界情况，赶快开启 watch 模式进行自测吧！
+
+## 预备
 
 [在 JavaScript 中使用构造器函数模拟类](https://lewis617.github.io/2017/02/15/construcor-function-create-class/)
 
@@ -30,7 +34,7 @@ JavaScript 版数据结构与算法教程，还包含了相应的单元测试。
 
 [JavaScript 版数据结构与算法（九）排序和搜索](https://lewis617.github.io/2017/02/20/sort-and-search/)
 
-## 刷题
+## 练习
 
 [数组搜索算法题：求和为定值的多个数](https://lewis617.github.io/2017/03/09/n-sum/)
 
