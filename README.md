@@ -30,7 +30,7 @@ JavaScript 版数据结构与算法教程，还包含了相应的单元测试。
 
 [JavaScript 版数据结构与算法（九）排序和搜索](https://lewis617.github.io/2017/02/20/sort-and-search/)
 
-## 续
+## 刷题
 
 [数组搜索算法题：求和为定值的多个数](https://lewis617.github.io/2017/03/09/n-sum/)
 
