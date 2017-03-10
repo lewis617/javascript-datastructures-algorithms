@@ -45,4 +45,18 @@ test('ArrayList', function () {
   expect(array.NSum(2, 6)).toEqual([[1, 5], [2, 4]]);
   expect(array.NSum(3, 7)).toEqual([[1, 2, 4]]);
   expect(array.NSum(4, 14)).toEqual([[2, 3, 4, 5]]);
+
+  function createRobArray() {
+    var array = new ArrayList();
+    array.insert(2);
+    array.insert(0);
+    array.insert(0);
+    array.insert(4);
+    array.insert(5);
+    return array;
+  }
+
+  array = createRobArray();
+  expect(array.simpleRob()).toBe(7);
+  expect(array.circleRob()).toBe(6);
 });
