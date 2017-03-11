@@ -40,6 +40,8 @@
 
 [动态规划算法题：打家劫舍](https://lewis617.github.io/2017/03/10/house-robber/)
 
+[贪心算法题：分饼干](https://lewis617.github.io/2017/03/11/assign-cookies/)
+
 ## 其他教程
 
 [React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)

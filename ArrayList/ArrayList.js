@@ -184,6 +184,18 @@ function ArrayList() {
       return array[0];
     }
     return Math.max(rob(array.slice(1)), rob(array.slice(0, array.length - 1)));
+  };
+
+  this.findContentChildren = function (cookies) {
+    this.quickSort();
+    cookies.sort();
+    var i = 0;  // 满足的孩子数量
+    for (var j = 0; i < array.length && j < cookies.length; j++) {  // 遍历饼干
+      if (array[i] <= cookies[j]) {
+        i++;
+      }
+    }
+    return i;
   }
 }
 
