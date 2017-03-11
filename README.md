@@ -47,15 +47,3 @@
 [React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
 
 [Angular2教程](https://github.com/lewis617/angular2-tutorial)
-
-## Star、Issue 与 Pull Request
-
-如果您觉得本开源教程不错，就点个 star 支持一下吧！
-
-如果您在阅读本开源教程时遇到问题，请提交 Issue，我会第一时间解答您的疑问。
-
-如果您发现本开源教程的源码、测试、文档、例子等任何方面有不足之处，欢迎 pull request。
-
-## License
-
-MIT
