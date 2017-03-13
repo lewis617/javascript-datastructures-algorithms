@@ -133,6 +133,27 @@ function BinarySearchTree() {
       }
     }
   };
+  /**
+   * 打家劫舍问题：房屋按二叉树来排列，
+   * 不允许在同一晚打劫相邻的两家，
+   * 求能打劫到的最大钱财数量。
+   */
+  this.rob = function () {
+    var dfs = function(node){
+      if(node === null){
+        return [null, null];
+      }
+      var left = dfs(node.left);
+      var right = dfs(node.right);
+      var res = [];
+      res[0] = left[1] + right[1] + node.key;
+      res[1] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
+      return res;
+    };
+
+    var num = dfs(root);
+    return Math.max(num[0], num[1]);
+  };
 
   var minNode = function (node) {
     if (node) {
