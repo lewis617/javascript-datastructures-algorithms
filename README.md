@@ -2,8 +2,6 @@
 [![Build Status](https://travis-ci.org/lewis617/javascript-datastructures-algorithms.svg?branch=master)](https://travis-ci.org/lewis617/javascript-datastructures-algorithms)
 [![codecov](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms)
 
-数据结构与算法的教程多如牛毛，使用 JavaScript 描述也不在少数。本系列博客只是将数据结构与算法用我自己的方式描述了一遍而已，中间穿插了完整可运行的代码以及覆盖率为100%的测试用例。如在阅读过程中发现不足之处，比如：错别字、更好的解法、概念使用不当等问题，还望积极反馈，我会及时更正。
-
 ## 预备
 
 [在 JavaScript 中使用构造器函数模拟类](https://lewis617.github.io/2017/02/15/construcor-function-create-class/)
