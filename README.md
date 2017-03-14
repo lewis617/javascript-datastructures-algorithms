@@ -2,11 +2,7 @@
 [![Build Status](https://travis-ci.org/lewis617/javascript-datastructures-algorithms.svg?branch=master)](https://travis-ci.org/lewis617/javascript-datastructures-algorithms)
 [![codecov](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms)
 
-本教程的特点：
-
-- 使用 JavaScript 描述算法
-- 示例代码完整可运行
-- 测试用例的代码覆盖率高达 100%
+数据结构与算法的教程多如牛毛，使用 JavaScript 描述也不在少数。本教程只是将数据结构与算法用我自己的方式描述了一遍而已，中间穿插了完整可运行的代码以及测试用例，希望能帮到需要的同学。
 
 ## 预备
 
