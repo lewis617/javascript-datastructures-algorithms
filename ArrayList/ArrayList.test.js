@@ -73,4 +73,13 @@ test('ArrayList', function () {
   array = createNonSortedArray();
   expect(array.findContentChildren([1, 1])).toBe(1);
   expect(array.findContentChildren([1, 2, 3])).toBe(3);
+
+  // test for sort() function, eg: 10 and 9, sort will return a wrong answer.
+  array = new ArrayList();
+  array.insert(10);
+  array.insert(9);
+  array.insert(8);
+  array.insert(7);
+  array.insert(6);
+  expect(array.findContentChildren([7, 6, 5])).toBe(2);
 });
