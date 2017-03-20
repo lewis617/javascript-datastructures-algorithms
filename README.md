@@ -2,12 +2,6 @@
 [![Build Status](https://travis-ci.org/lewis617/javascript-datastructures-algorithms.svg?branch=master)](https://travis-ci.org/lewis617/javascript-datastructures-algorithms)
 [![codecov](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/lewis617/javascript-datastructures-algorithms)
 
-本教程的特点：
-
-- 使用 JavaScript 描述算法
-- 示例代码完整可运行
-- 测试用例的代码覆盖率高达 100%
-
 ## 预备
 
 [在 JavaScript 中使用构造器函数模拟类](https://lewis617.github.io/2017/02/15/construcor-function-create-class/)
@@ -42,7 +36,7 @@
 
 [贪心算法题：分饼干](https://lewis617.github.io/2017/03/11/assign-cookies/)
 
-## 其他教程
+## 其他技术博客
 
 [React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
 
