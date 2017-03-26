@@ -1,5 +1,5 @@
-var rob1 = require('../rob1');
+var rob = require('../rob1');
 
 test('rob1', function () {
-  expect(rob1([2, 0, 0, 4, 5])).toBe(7);
+  expect(rob([2, 0, 0, 4, 5])).toBe(7);
 });

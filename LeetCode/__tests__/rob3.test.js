@@ -1,4 +1,4 @@
-var rob3 = require('../rob3');
+var rob = require('../rob3');
 var BinarySearchTree = require('../../Tree/BinarySearchTree');
 
 test('rob3', function () {
@@ -11,5 +11,5 @@ test('rob3', function () {
   binarySearchTree.insert(3);
   binarySearchTree.insert(9);
 
-  expect(rob3(binarySearchTree.getRoot())).toBe(27);
+  expect(rob(binarySearchTree.getRoot())).toBe(27);
 });
