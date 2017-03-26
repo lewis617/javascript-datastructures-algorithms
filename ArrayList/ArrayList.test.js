@@ -42,10 +42,6 @@ test('ArrayList', function () {
   expect(array.binarySearch(6)).toBe(-1);
   expect(array.binarySearch(2)).toBe(1);
 
-  expect(array.NSum(2, 6)).toEqual([[1, 5], [2, 4]]);
-  expect(array.NSum(3, 7)).toEqual([[1, 2, 4]]);
-  expect(array.NSum(4, 14)).toEqual([[2, 3, 4, 5]]);
-
   function createRobArray() {
     var array = new ArrayList();
     array.insert(2);
