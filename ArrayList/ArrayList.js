@@ -142,6 +142,7 @@ function ArrayList() {
         if (s === M) {
           results.push(result.concat([nums[l], nums[r]]));
           l++;
+          r--;
         } else if (s < M) {
           l++;
         } else {
