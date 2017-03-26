@@ -130,29 +130,6 @@ function ArrayList() {
     return -1;
   };
 
-  var rob = function (array) {
-    var last = 0,
-      now = 0;
-    for (var i = 0; i < array.length; i++) {
-      var temp = last;
-      last = now;
-      now = Math.max(temp + array[i], now);
-    }
-
-    return now;
-  };
-
-  this.simpleRob = function () {
-    return rob(array);
-  };
-
-  this.circleRob = function () {
-    if (array.length === 1) {
-      return array[0];
-    }
-    return Math.max(rob(array.slice(1)), rob(array.slice(0, array.length - 1)));
-  };
-
   this.findContentChildren = function (cookies) {
     this.quickSort();
     cookies.sort(function (a, b) {

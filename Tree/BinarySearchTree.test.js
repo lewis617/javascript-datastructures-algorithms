@@ -17,8 +17,6 @@ test('BinarySearchTree', function () {
   expect(binarySearchTree.values('postOrderTraverse')).toEqual([3, 5, 9, 7, 13, 11]);
   expect(binarySearchTree.values('postOrderTraverseUnRec')).toEqual([3, 5, 9, 7, 13, 11]);
 
-  expect(binarySearchTree.rob()).toBe(27);
-
   expect(binarySearchTree.min()).toBe(3);
   expect(binarySearchTree.max()).toBe(13);
   expect(binarySearchTree.search(3)).toBeTruthy();
@@ -50,4 +48,5 @@ test('BinarySearchTree', function () {
   expect(binarySearchTree.min()).toBe(null);
   expect(binarySearchTree.max()).toBe(null);
   expect(binarySearchTree.remove(11)).toBe(null);
+  expect(binarySearchTree.getRoot()).toBe(null)
 });

@@ -42,30 +42,6 @@ test('ArrayList', function () {
   expect(array.binarySearch(6)).toBe(-1);
   expect(array.binarySearch(2)).toBe(1);
 
-  function createRobArray() {
-    var array = new ArrayList();
-    array.insert(2);
-    array.insert(0);
-    array.insert(0);
-    array.insert(4);
-    array.insert(5);
-    return array;
-  }
-
-  array = createRobArray();
-  expect(array.simpleRob()).toBe(7);
-  expect(array.circleRob()).toBe(6);
-
-  function createOneLengthRobArray() {
-    var array = new ArrayList();
-    array.insert(2);
-    return array;
-  }
-
-  array = createOneLengthRobArray();
-  expect(array.simpleRob()).toBe(2);
-  expect(array.circleRob()).toBe(2);
-
   array = createNonSortedArray();
   expect(array.findContentChildren([1, 1])).toBe(1);
   expect(array.findContentChildren([1, 2, 3])).toBe(3);
