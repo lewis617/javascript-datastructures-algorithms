@@ -1,4 +1,4 @@
-var twoSumObj = require('../twoSum');
+var twoSumObj = require('../001-twoSum');
 
 test('twoSum', function () {
   expect(twoSumObj.twoSum([2, 7, 11, 15], 9)).toEqual([0, 1]);

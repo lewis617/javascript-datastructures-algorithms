@@ -3,7 +3,7 @@
  * @return {number}
  */
 var rob = function(nums) {
-  var rob1 = require('./rob1');
+  var rob1 = require('./198-rob1');
 
   if (nums.length === 1) {
     return nums[0];

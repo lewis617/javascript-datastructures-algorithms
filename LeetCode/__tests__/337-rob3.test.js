@@ -1,4 +1,4 @@
-var rob = require('../rob3');
+var rob = require('../337-rob3.js');
 var BinarySearchTree = require('../../Tree/BinarySearchTree');
 
 test('rob3', function () {

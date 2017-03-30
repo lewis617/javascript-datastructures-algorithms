@@ -1,4 +1,4 @@
-var rob = require('../rob2');
+var rob = require('../213-rob2');
 
 test('rob2', function () {
   expect(rob([2])).toBe(2);

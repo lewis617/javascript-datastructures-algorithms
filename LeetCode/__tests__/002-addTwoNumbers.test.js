@@ -1,4 +1,4 @@
-var addTwoNumbers = require('../addTwoNumbers2');
+var addTwoNumbers = require('../002-addTwoNumbers');
 
 test('addTwoNumbers', function () {
   var getLinkedList = function () {
@@ -19,6 +19,7 @@ test('addTwoNumbers', function () {
     return linkedList;
   };
 
-  expect(addTwoNumbers(getLinkedList(7, 2, 4, 3), getLinkedList(5, 6, 4))).toEqual(getLinkedList(7, 8, 0, 7));
-  expect(addTwoNumbers(getLinkedList(7), getLinkedList(5))).toEqual(getLinkedList(1, 2));
+  expect(addTwoNumbers(getLinkedList(2, 4, 3), getLinkedList(5, 6, 4))).toEqual(getLinkedList(7, 0, 8));
+  expect(addTwoNumbers(getLinkedList(1, 8), getLinkedList(0))).toEqual(getLinkedList(1, 8));
+  expect(addTwoNumbers(getLinkedList(9), getLinkedList(1))).toEqual(getLinkedList(0, 1));
 });
