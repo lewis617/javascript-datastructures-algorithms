@@ -36,4 +36,4 @@
 
 [贪心算法题：分饼干](https://lewis617.github.io/2017/03/11/assign-cookies/)
 
-[链表算法题：两个数相加](https://lewis617.github.io/2017/03/11/add-two-numbers/)
+[链表算法题：两个数相加](https://lewis617.github.io/2017/03/12/add-two-numbers/)
