@@ -28,7 +28,7 @@
 
 [JavaScript 版数据结构与算法（九）排序和搜索](https://lewis617.github.io/2017/02/20/sort-and-search/)
 
-## LeetCode
+## LeetCode（JavaScript 版）
 
 [数组搜索算法题：求和为定值的多个数](https://lewis617.github.io/2017/03/09/n-sum/)
 
@@ -37,3 +37,5 @@
 [贪心算法题：分饼干](https://lewis617.github.io/2017/03/11/assign-cookies/)
 
 [链表算法题：两个数相加](https://lewis617.github.io/2017/03/12/add-two-numbers/)
+
+*未完待续*
